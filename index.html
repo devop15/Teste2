@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVELA BAR</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('C:/Users/pedro.robalo/Desktop/Site/devela1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        header {
+            background-color: #e0e0e0; /* Tom mais claro */
+            color: #000; /* Preto */
+            text-align: center;
+            padding: 0.5em; /* Reduz a altura da barra */
+            position: relative;
+        }
+
+        header img {
+            width: 150px; /* Ajuste o tamanho conforme necessário */
+            height: 150px; /* Ajuste o tamanho conforme necessário */
+            border-radius: 50%;
+            background-color: #fff; /* Fundo branco para o círculo */
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra mais pronunciada */
+        }
+
+        h1 {
+            margin-top: 50px; /* Ajusta o espaço entre o logotipo e o título */
+            font-style: italic; /* Adiciona estilo itálico */
+            font-family: 'Calibri', sans-serif; /* Muda a fonte para Calibri */
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            position: relative; /* Adiciona posição relativa para posicionar o ícone de menu */
+        }
+
+        .menu-tab {
+            background-color: #FF69B4; /* Rosa suave */
+            color: #fff; /* Cor do texto */
+            text-align: center;
+            padding: 15px; /* Aumenta o tamanho da aba */
+            position: absolute;
+            top: 20px; /* Ajuste a posição conforme necessário */
+            left: 20px; /* Ajuste a posição conforme necessário */
+            border-radius: 10px; /* Borda mais arredondada */
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
+        .menu-tab img {
+            width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+            height: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+            margin-bottom: 5px; /* Ajuste a margem inferior conforme necessário */
+        }
+
+        footer {
+            background-color: #e0e0e0; /* Tom mais claro */
+            color: #000; /* Preto */
+            text-align: center;
+            padding: 0.5em; /* Reduz a altura da barra */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="C:/Users/pedro.robalo/Desktop/Site/devela.png" alt="Logotipo DEVELA BAR">
+        <h1>Devela Lounge Bar</h1>
+        <p>Um lugar para bons momentos</p>
+    </header>
+
+    <section>
+        <h2>Bem-vindo ao Devela Lounge Bar!</h2>
+        <p>Descubra um ambiente único e saboreie os melhores cocktails de Portugal.</p>
+        <p>Good vibes, cocktails, sisha and more!</p>
+
+        <div class="menu-tab" onclick="redirectToMenuPage()">
+            <img src="menu.png" alt="Ícone de Menu">
+            <p>Menu</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DEVELA BAR. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function redirectToMenuPage() {
+            window.location.href = "pagina_menu.html"; // Substitua "pagina_menu.html" pelo caminho da sua página de menu
+        }
+    </script>
+
+</body>
+</html>
